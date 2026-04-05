@@ -1,0 +1,65 @@
+<h2>Structural Polish</h2>
+<p class="subtitle">These are small upgrades to the existing layout. Nothing dramatic. Click any you'd want to skip or change.</p>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="founder-cards" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Founder cards with subtle borders</h3>
+      <p>Instead of flat text names stacked vertically, each founder gets a light card with a faint gold border. Same content, just visually grouped. Still minimal, but signals "these are real people" rather than a legal filing.</p>
+      <div style="margin-top: 0.8rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+        <div style="border: 1px solid rgba(184, 151, 106, 0.3); border-radius: 8px; padding: 0.8rem 1rem; flex: 1; min-width: 140px;">
+          <p style="font-weight: 600; font-size: 0.95rem;">Matt Segar, MD</p>
+          <p style="opacity: 0.6; font-size: 0.8rem;">Founder & CEO</p>
+        </div>
+        <div style="border: 1px solid rgba(184, 151, 106, 0.3); border-radius: 8px; padding: 0.8rem 1rem; flex: 1; min-width: 140px;">
+          <p style="font-weight: 600; font-size: 0.95rem;">Luke Rouleau</p>
+          <p style="opacity: 0.6; font-size: 0.8rem;">Founder & CTO</p>
+        </div>
+        <div style="border: 1px solid rgba(184, 151, 106, 0.3); border-radius: 8px; padding: 0.8rem 1rem; flex: 1; min-width: 140px;">
+          <p style="font-weight: 600; font-size: 0.95rem;">Nick Segar, MBA</p>
+          <p style="opacity: 0.6; font-size: 0.8rem;">Chief Strategy Officer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="section-breaks" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>Styled section breaks instead of bare &lt;hr&gt;</h3>
+      <p>Replace the raw horizontal rules with a thin gold line at reduced opacity, or a small decorative dot separator. Same visual purpose, slightly more intentional.</p>
+      <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+        <div style="width: 60%; height: 1px; background: linear-gradient(to right, transparent, rgba(184, 151, 106, 0.4), transparent);"></div>
+        <p style="opacity: 0.4; font-size: 0.75rem;">Option: gradient fade gold line</p>
+        <div style="display: flex; gap: 6px;">
+          <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(184, 151, 106, 0.5);"></span>
+          <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(184, 151, 106, 0.5);"></span>
+          <span style="width: 4px; height: 4px; border-radius: 50%; background: rgba(184, 151, 106, 0.5);"></span>
+        </div>
+        <p style="opacity: 0.4; font-size: 0.75rem;">Option: three dot separator (echoes the logo)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="email-styling" onclick="toggleSelect(this)">
+    <div class="letter">3</div>
+    <div class="content">
+      <h3>Email capture styling</h3>
+      <p>Inline email input + submit button in the gold accent color, matching the existing palette. Kept compact, single row on desktop, stacked on mobile. No heavy marketing treatment.</p>
+      <div style="margin-top: 0.8rem; display: flex; gap: 0.5rem; max-width: 400px;">
+        <div style="flex: 1; padding: 0.6rem 0.8rem; border: 1px solid rgba(184, 151, 106, 0.3); border-radius: 6px; background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.4); font-size: 0.85rem;">your@email.com</div>
+        <div style="padding: 0.6rem 1.2rem; background: rgba(184, 151, 106, 0.2); border: 1px solid rgba(184, 151, 106, 0.4); border-radius: 6px; font-size: 0.85rem; color: rgba(184, 151, 106, 1); font-weight: 500; white-space: nowrap;">Notify me</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="page-title" onclick="toggleSelect(this)">
+    <div class="letter">4</div>
+    <div class="content">
+      <h3>Page title and meta description</h3>
+      <p><strong>Title:</strong> "ReCODE Medical — A New Chapter"</p>
+      <p><strong>Description:</strong> "ReCODE Medical has been acquired. The technology continues under new ownership."</p>
+    </div>
+  </div>
+</div>
