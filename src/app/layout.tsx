@@ -17,21 +17,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "ReCODE Medical — Acquired",
+  title: "ReCODE Medical \u2014 A New Chapter",
   description:
-    "ReCODE Medical has been acquired. A sincere thank you to all of our users.",
+    "ReCODE Medical has been acquired. The technology continues under new ownership.",
   openGraph: {
-    title: "ReCODE Medical — Acquired",
+    title: "ReCODE Medical \u2014 A New Chapter",
     description:
-      "ReCODE Medical has been acquired. A sincere thank you to all of our users.",
+      "ReCODE Medical has been acquired. The technology continues under new ownership.",
     type: "website",
     url: "https://recodemedical.com",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ReCODE Medical — Acquired",
+    title: "ReCODE Medical \u2014 A New Chapter",
     description:
-      "ReCODE Medical has been acquired. A sincere thank you to all of our users.",
+      "ReCODE Medical has been acquired. The technology continues under new ownership.",
   },
 };
 
