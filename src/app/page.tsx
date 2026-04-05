@@ -1,3 +1,5 @@
+import SignupForm from "./signup-form";
+
 export default function Home() {
   return (
     <div className="relative z-[2]">
@@ -37,68 +39,80 @@ export default function Home() {
           >
             The next chapter begins under new ownership.
           </p>
-          <hr
-            className="w-20 border-0 h-px bg-gold my-10 mx-auto"
-            style={{ animation: "fadeInUp 0.8s ease-out 0.8s both" }}
-          />
-          <p
-            className="font-sans text-[1.1rem] font-normal text-cream-soft max-w-[480px]"
-            style={{ animation: "fadeInUp 0.8s ease-out 1s both" }}
-          >
-            The ReCODE Chat app has been retired as the technology moves forward under its new owner.
-          </p>
         </section>
+
+        {/* Major break: dots */}
+        <div className="divider-dots" style={{ animation: "fadeIn 1s ease-out 0.8s both" }}>
+          <span />
+          <span />
+          <span />
+        </div>
 
         {/* Letter */}
         <section
-          className="max-w-[640px] mx-auto px-6 sm:px-8 pt-16 pb-24"
-          style={{ animation: "fadeIn 1s ease-out 1.2s both" }}
+          className="max-w-[640px] mx-auto px-6 sm:px-8 pt-8 pb-24"
+          style={{ animation: "fadeIn 1s ease-out 1s both" }}
         >
-          <hr className="w-10 border-0 h-px bg-gold-dim mx-auto mb-12" />
           <div className="font-serif text-[1.4rem] font-normal leading-[1.85] text-cream">
             <p className="mb-6 first-letter:font-semibold first-letter:text-[3.8rem] first-letter:float-left first-letter:leading-[0.8] first-letter:mr-[0.15em] first-letter:mt-[0.1em] first-letter:text-white-warm">
-              ReCODE Medical is pleased to announce that it has
-              been acquired. The ReCODE Chat application has been
-              retired, and the technology will be brought to market
-              as a completely new product under its new ownership.
+              ReCODE Medical is pleased to announce that it has been
+              acquired. ReCODE Chat was built to give physicians and
+              medical coders a faster, AI-powered way to navigate the
+              complexities of medical coding. The platform was adopted
+              by physicians and clinics across the United States,
+              confirming a clear demand for smarter tools in the
+              medical coding workflow.
             </p>
             <p className="mb-6">
-              ReCODE Chat was built to give physicians and medical
-              coders a faster, AI-powered way to navigate the
-              complexities of medical coding. The platform was
-              adopted by physicians and clinics across the United
-              States, confirming a clear demand for smarter tools
-              in the medical coding workflow.
+              The ReCODE Chat application has been retired, and the
+              technology will continue under a new brand. A formal
+              press release with full details will be announced in the
+              coming weeks.
             </p>
             <p className="mb-6">
-              As part of the transition, we will be building an entirely new product
-              from the ground up, informed by the insights and
-              feedback gathered during ReCODE Chat&rsquo;s time in
-              the field. While the ReCODE name will not carry
-              forward, the mission it represented will.
+              No user data was shared with or transferred to the
+              acquiring party.
             </p>
-            <p className="mb-6">
+            <p>
               We are grateful to every physician and care team who
-              trusted ReCODE Chat in their practice. Your
-              willingness to adopt new technology and share candid
-              feedback made this outcome possible.
-            </p>
-            <p className="mb-6">
-              Thank you for being part of this journey.
+              trusted ReCODE Chat in their practice. Your willingness
+              to adopt new technology and share candid feedback made
+              this outcome possible.
             </p>
           </div>
         </section>
 
+        {/* Major break: dots */}
+        <div className="divider-dots">
+          <span />
+          <span />
+          <span />
+        </div>
+
+        {/* Email capture */}
+        <section className="py-16 px-8 text-center">
+          <p className="font-sans text-[0.8rem] font-normal tracking-[0.35em] uppercase text-gold-dim mb-4">
+            Stay informed
+          </p>
+          <p className="font-serif text-[1.2rem] text-cream-soft mb-8">
+            Sign up to be notified when the new product launches.
+          </p>
+          <SignupForm />
+        </section>
+
+        {/* Minor break: gradient line */}
+        <div className="divider-line" />
+
         {/* Team */}
         <section
-          className="py-20 px-8 text-center border-t border-gold/15"
-          style={{ animation: "fadeIn 1s ease-out 1.4s both" }}
+          className="py-20 px-8 text-center"
+          style={{ animation: "fadeIn 1s ease-out 1.2s both" }}
         >
           <p className="font-sans text-[0.8rem] font-normal tracking-[0.35em] uppercase text-gold-dim mb-12">
             From the entire team
           </p>
-          <div className="flex justify-center gap-16 flex-wrap max-w-[700px] mx-auto">
-            <div className="min-w-[160px]">
+          <div className="flex justify-center gap-6 flex-wrap max-w-[700px] mx-auto">
+            <div className="founder-card text-center">
               <p className="font-serif font-medium text-[1.3rem] text-white-warm mb-1">
                 Matt Segar, MD
               </p>
@@ -114,7 +128,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="min-w-[160px]">
+            <div className="founder-card text-center">
               <p className="font-serif font-medium text-[1.3rem] text-white-warm mb-1">
                 Luke Rouleau
               </p>
@@ -130,7 +144,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="min-w-[160px]">
+            <div className="founder-card text-center">
               <p className="font-serif font-medium text-[1.3rem] text-white-warm mb-1">
                 Nick Segar, MBA
               </p>
@@ -153,10 +167,10 @@ export default function Home() {
       {/* Footer */}
       <footer
         className="pt-16 pb-12 px-8 text-center"
-        style={{ animation: "fadeIn 1s ease-out 1.6s both" }}
+        style={{ animation: "fadeIn 1s ease-out 1.4s both" }}
       >
-        <hr className="w-10 border-0 h-px bg-gold-dim mx-auto mb-10" />
-        <p className="font-serif italic font-normal text-[1.5rem] text-gold">
+        <div className="divider-line" />
+        <p className="font-serif italic font-normal text-[1.5rem] text-gold mt-10">
           The mission continues
         </p>
         <p className="font-sans text-[1rem] text-gold-dim mt-8 tracking-[0.1em]">
