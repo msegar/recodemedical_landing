@@ -94,3 +94,85 @@ body::after {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--gold);
 }
+
+/* Section breaks */
+.divider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 2rem 0;
+}
+
+.divider-dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+}
+
+.divider-line {
+  height: 1px;
+  max-width: 200px;
+  margin: 2rem auto;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(184, 151, 106, 0.4),
+    transparent
+  );
+  border: none;
+}
+
+/* Founder cards */
+.founder-card {
+  border: 1px solid rgba(184, 151, 106, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  min-width: 180px;
+  flex: 1;
+}
+
+/* Email capture */
+.signup-input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(184, 151, 106, 0.3);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  color: var(--cream);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  outline: none;
+  flex: 1;
+  min-width: 0;
+}
+
+.signup-input::placeholder {
+  color: rgba(184, 151, 106, 0.4);
+}
+
+.signup-input:focus {
+  border-color: var(--gold);
+}
+
+.signup-button {
+  background: rgba(184, 151, 106, 0.2);
+  border: 1px solid rgba(184, 151, 106, 0.4);
+  border-radius: 6px;
+  padding: 0.6rem 1.2rem;
+  color: var(--gold);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.signup-button:hover {
+  background: rgba(184, 151, 106, 0.3);
+}
+
+.signup-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
