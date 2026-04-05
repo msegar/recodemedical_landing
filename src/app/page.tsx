@@ -68,10 +68,10 @@ export default function Home() {
               complexities of medical coding. The platform was
               adopted by physicians and clinics across the United
               States, confirming a clear demand for smarter tools
-              in the coding workflow.
+              in the medical coding workflow.
             </p>
             <p className="mb-6">
-              The new owner will be building an entirely new product
+              As part of the transition, we will be building an entirely new product
               from the ground up, informed by the insights and
               feedback gathered during ReCODE Chat&rsquo;s time in
               the field. While the ReCODE name will not carry
