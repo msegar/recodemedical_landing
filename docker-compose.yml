@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  website:
+    build: .
+    networks:
+      - dokploy-network
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=dokploy-network"
+      - "traefik.http.routers.recodemedical.rule=Host(`recodemedical.com`)"
+      - "traefik.http.routers.recodemedical.entrypoints=websecure"
+      - "traefik.http.routers.recodemedical.tls=true"
+      - "traefik.http.routers.recodemedical.tls.certresolver=letsencrypt"
+      - "traefik.http.services.recodemedical.loadbalancer.server.port=3000"
+      # HTTP to HTTPS redirect
+      - "traefik.http.middlewares.recodemedical-redirect.redirectscheme.scheme=https"
+      - "traefik.http.routers.recodemedical-http.rule=Host(`recodemedical.com`)"
+      - "traefik.http.routers.recodemedical-http.entrypoints=web"
+      - "traefik.http.routers.recodemedical-http.middlewares=recodemedical-redirect"
+    restart: unless-stopped
+
+networks:
+  dokploy-network:
+    external: true
