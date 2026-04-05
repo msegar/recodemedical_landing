@@ -2,13 +2,17 @@ version: '3.8'
 
 services:
   website:
-    build: .
+    build:
+      context: .
+      args:
+        - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL}
     networks:
       - dokploy-network
     environment:
       - NODE_ENV=production
       - PORT=3000
       - HOSTNAME=0.0.0.0
+      - SUPABASE_SERVICE_ROLE_KEY=${SUPABASE_SERVICE_ROLE_KEY}
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=dokploy-network"
